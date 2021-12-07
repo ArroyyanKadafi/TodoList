@@ -1,0 +1,133 @@
+*{box-sizing: border-box;}
+
+.container {
+    /* margin: auto; */
+    width: 1000px;
+    max-height: 550px;
+    box-shadow: 0 0 10px rgba(33, 25, 25, 0.6);
+    border-radius: 5px;
+    overflow: auto;
+    padding: 15px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+
+}
+
+body {
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #9599E2 100%);
+ 
+}
+
+/* Form Todo */
+.formTodo {
+    /* background-color: #b1b1b1; */
+
+}
+.loginForm label, .registForm label {
+    display: inline-block;
+    margin: 10px 0 2px 0;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 16px;
+}
+
+.loginForm input,.loginForm textarea, .registForm input {
+    width: 100%;
+    padding: 10px 0 10px 10px;
+    outline: none;border: none;
+    background-color: #E2E2E2;
+    color: rgb(41, 41, 41);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 100ms;
+}
+
+.loginForm input[type=checkbox]{
+    width: 18px;height: 18px;
+    margin-right: 5px;
+}
+
+.loginForm input:focus, .loginForm textarea:focus {
+    background-color: #bfbfbf;
+}
+
+.loginForm button, .registForm button {
+    width: 100%;
+    padding: 10px 0;
+    border: none;outline: none;
+    background-color:   #9599E2;
+    transition: 150ms;
+}
+
+.registForm button {
+    margin-top: 20px;
+}
+
+.loginForm button:hover, .loginForm button:focus{
+   background-color: #FBAB7E;
+}
+
+
+/* List Todo */
+.listTodo {
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.listTodo ol {
+    /* background-color: #838383; */
+    margin: 0;
+    padding: 10px 0 10px 25px;
+}
+
+div.listGroup {
+    background-color: #D4D0CE ;
+    margin: 15px 0 15px -28px;
+    padding: 10px 10px 10px 30px;
+    padding-left: 30px;
+}
+
+.listTodo ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Edit Delete */
+.flexing{
+    background-color: whitesmoke;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin: 15px 0 15px -28px;
+    padding:10px 10px 10px 30px;
+}
+.theleft{
+    display:flex;
+    flex-direction:column;
+}
+.break i {
+    /* background-color: #7091d06e; */
+    padding: 10px;
+    text-shadow: 0 0 10px rgba(0,0,0,.4);
+    font-size: 20px;
+    color: rgba(255, 0, 0, 0.816);
+    transition: 200ms;
+}
+.break i:hover {
+    text-shadow: 3px 3px 10px rgba(0,0,0,.7);
+}
+
+.clearAll {
+    color: white;
+    background-color: #193c61;
+    text-decoration:none; 
+    padding:6px; 
+    position: absolute; 
+    right:15px;
+}
+
+/* .clearAll:hover, .clearAll:focus { */
+    /* background-color: #833232;
+} */
